@@ -28,7 +28,7 @@ section {
 .card {
     width: 380px;
     height: 550px;
-    border-radius: 0 20px 30px 0;
+    border-radius: 0 10PX 30px 0;
     box-shadow: 0 0 20px #161616;
     background: linear-gradient(90deg, #5E55A4, #7975B6);
     position: relative;
@@ -101,4 +101,66 @@ section {
     border-radius: 40px;
     rotate: calc(45deg);
 
+}
+form {
+    position: relative;
+    z-index: 10;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #4e449e; 
+}
+
+.form-group input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    outline: none;
+    background: rgba(255, 255, 255, 0.9);
+    width: 80%;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.checkbox-group label {
+    color: #848484;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.login-btn {
+    width: 80%;
+    padding: 14px;
+    background: white;
+    color: #4e449e;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(78, 68, 158, 0.3);
+    transition: background 0.2s ease;
+}
+
+.login-btn:hover {
+    background: #3b3280;
 }
