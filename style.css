@@ -3,12 +3,12 @@
     padding: 0;
     margin: 0;
 }
-/* body {
+body {
     height: 100%;
     width: 100%;
     border: 1px solid black;
     
-} */
+} 
 section {
     background: linear-gradient(90deg, #bfbae6, #766BCC);
     height: 100%;
@@ -45,11 +45,7 @@ section {
     bottom: 0;
     left: 0;
     right: 0;
-    
-    
-
 }
-/* icon styles */
 .input-icon { position: relative; }
 .input-icon .icon {
   position: absolute;
@@ -65,7 +61,6 @@ section {
 .input-icon input { padding-left: 44px; }.card-background-1 {
     z-index: 2;
     position: absolute;
-    /* rotate: calc(45deg); */
     border-top-right-radius: 60px;
     background: white;
     width: 420px;
@@ -74,11 +69,6 @@ section {
     top: 10;
     left: -270px;
     bottom: 50px;
-    /* clip-path: polygon(0 0, 50% 0, 100% 30%, 0 100%);  */
-    /* clip-path: ellipse(90% 55% at 0% 45%);
-    clip-path: polygon(0 0, 48% 0, 100% 30%, 0 98%);
-    mask-image: radial-gradient(circle at 74% 23%, black 0%, black 72%, transparent 75%); */
-
 }
  .card-background-2 {
     position: absolute;
@@ -177,8 +167,8 @@ form {
 }
 
 .login-btn {
-    width: 60%;
-    padding: 14px;
+    width: 70%;
+    padding: 5px 14px;
     background: white;
     color: #4e449e;
     border: none;
@@ -187,6 +177,14 @@ form {
     cursor: pointer;
     box-shadow: 0 5px 15px rgba(78, 68, 158, 0.3);
     transition: background 0.2s ease;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+.login-btn img {
+    filter: invert(28%) sepia(40%) saturate(1500%) hue-rotate(230deg);
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
 }
 
 .login-btn:hover {
@@ -211,7 +209,7 @@ form {
 }
 .social-icons {
     position: absolute;
-    z-index: 10; /* Ensures it sits on top of all card-background spans */
+    z-index: 10;
     display: flex;
     justify-content: center;
     margin-top: 60px;
@@ -226,20 +224,10 @@ form {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    /* background: #dddcdc; */
-    color: #4e449e; /* Matches your main theme color */
+    color: #4e449e; 
     text-decoration: none;
     font-size: 1rem;
-    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); */
     transition: all 0.3s ease;
     filter: brightness(0) invert(1);
 }
 
-/* Hover effects 
-.social-icons a:hover {
-    background: #4e449e;
-    color: #ffffff;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 15px rgba(78, 68, 158, 0.4);
-} */
- 
