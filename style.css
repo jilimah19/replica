@@ -136,7 +136,7 @@ form {
 }
 
 .form-group input {
-    padding: 4px 12px;
+    padding: 2.8px 12px;
     border: 1px solid #ccc;
     border-width: 2px;
     border-radius: 0;
@@ -167,24 +167,27 @@ form {
 }
 
 .login-btn {
-    width: 70%;
-    padding: 5px 14px;
+    width: 85%;
+    padding: 1px 14px;
     background: white;
     color: #4e449e;
     border: none;
-    border-radius: 12px;
+    border-radius: 40px;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 0 5px 15px rgba(78, 68, 158, 0.3);
+    /* box-shadow: 0 5px 15px rgba(78, 68, 158, 0.3); */
     transition: background 0.2s ease;
     align-items: center;
     justify-content: space-between;
     display: flex;
+    box-shadow: 0 1.5px #5A539B;
 }
 .login-btn img {
     filter: invert(28%) sepia(40%) saturate(1500%) hue-rotate(230deg);
     margin: 0 0 0 0;
     padding: 0 0 0 0;
+    position: relative;
+    right: -10px;
 }
 
 .login-btn:hover {
