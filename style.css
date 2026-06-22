@@ -10,7 +10,7 @@
     
 } */
 section {
-    background: linear-gradient(90deg, #bfbae6, #4e449e);
+    background: linear-gradient(90deg, #bfbae6, #766BCC);
     height: 100%;
     width: 100%;
 }
@@ -26,9 +26,9 @@ section {
 }
 
 .card {
-    width: 380px;
+    width: 300px;
     height: 550px;
-    border-radius: 0 10PX 30px 0;
+    border-radius: 0 10PX 20px 0;
     box-shadow: 0 0 20px #161616;
     background: linear-gradient(90deg, #5E55A4, #7975B6);
     position: relative;
@@ -49,7 +49,20 @@ section {
     
 
 }
-.card-background-1 {
+/* icon styles */
+.input-icon { position: relative; }
+.input-icon .icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  pointer-events: none;
+  display: inline-block;
+  color: rgba(255,255,255,0.95);
+}
+.input-icon input { padding-left: 44px; }.card-background-1 {
     z-index: 2;
     position: absolute;
     /* rotate: calc(45deg); */
@@ -69,23 +82,23 @@ section {
 }
  .card-background-2 {
     position: absolute;
-    top: -140px;
-    right: 10px;
+    top: -130px;
+    right: 0px;
     height: 200px;
-    width: 200px;
+    width: 150px;
     background: #6C64AC;
     border-radius: 0 20px 20px 0;
     rotate: calc(45deg);
 } 
  .card-background-3 {
     position: absolute;
-    top: 120px;
+    top: 60px;
     right: -1000;
     left: 20px;
     bottom: 0;
-    height: 110px;
+    height: 150px;
     width: 600px;
-    background: #5E56A3;
+    background: linear-gradient(90deg, #69669E, #5D54A4);
     border-radius: 0 20px 20px 0;
     rotate: calc(135deg);
 } 
@@ -93,10 +106,10 @@ section {
     content: "";
     position: absolute;
     bottom: -230px;
-    right: 350px;
-    height: 350px;
-    width: 400px;
-    left: 120px;
+    right: 250px;
+    height: 330px;
+    width: 370px;
+    left: 60px;
     background: #7F7BB9;
     border-radius: 40px;
     rotate: calc(45deg);
@@ -104,7 +117,7 @@ section {
 }
 form {
     position: relative;
-    z-index: 10;
+    z-index: 3;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -115,24 +128,38 @@ form {
 .form-group {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
 }
 
 .form-group label {
     font-size: 0.85rem;
-    font-weight: 600;
+    font-weight: bold;
     margin-bottom: 6px;
-    color: #4e449e; 
+    color: #797979; 
+    display: flex;
+    align-items: baseline;
+    gap: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form-group img {
+    filter: invert(28%) sepia(40%) saturate(1500%) hue-rotate(230deg);
 }
 
 .form-group input {
-    padding: 12px;
+    padding: 4px 12px;
     border: 1px solid #ccc;
-    border-radius: 8px;
+    border-width: 2px;
+    border-radius: 0;
+    border-bottom: 0;
+    border-right: 0;
+    border-left: 0;
     font-size: 0.95rem;
     outline: none;
     background: rgba(255, 255, 255, 0.9);
-    width: 80%;
+    width: 60%;
+}
+.border-colour input{
+    border-color: #6D699F;
 }
 
 .checkbox-group {
@@ -146,10 +173,11 @@ form {
     color: #848484;
     font-size: 0.85rem;
     cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .login-btn {
-    width: 80%;
+    width: 60%;
     padding: 14px;
     background: white;
     color: #4e449e;
@@ -164,3 +192,54 @@ form {
 .login-btn:hover {
     background: #3b3280;
 }
+.social-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    bottom: 100px;
+    right: 20px;
+    z-index: 1;
+    color: #bfbae6;
+}
+.social-login p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    right: 10px;
+}
+.social-icons {
+    position: absolute;
+    z-index: 10; /* Ensures it sits on top of all card-background spans */
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    position: absolute;
+    right: 0px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* background: #dddcdc; */
+    color: #4e449e; /* Matches your main theme color */
+    text-decoration: none;
+    font-size: 1rem;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); */
+    transition: all 0.3s ease;
+    filter: brightness(0) invert(1);
+}
+
+/* Hover effects 
+.social-icons a:hover {
+    background: #4e449e;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(78, 68, 158, 0.4);
+} */
+ 
