@@ -46,19 +46,9 @@ section {
     left: 0;
     right: 0;
 }
-.input-icon { position: relative; }
-.input-icon .icon {
-  position: absolute;
-  left: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 18px;
-  height: 18px;
-  pointer-events: none;
-  display: inline-block;
-  color: rgba(255,255,255,0.95);
-}
-.input-icon input { padding-left: 44px; }.card-background-1 {
+
+
+.card-background-1 {
     z-index: 2;
     position: absolute;
     border-top-right-radius: 60px;
@@ -232,5 +222,10 @@ form {
     font-size: 1rem;
     transition: all 0.3s ease;
     filter: brightness(0) invert(1);
+}
+
+.card:hover {
+    transform: translate(10px, 0px);
+    box-shadow: 2px 0 0 2px #fff;
 }
 
